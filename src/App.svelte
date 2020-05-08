@@ -53,9 +53,9 @@
 
     function loopCallback(time) {
         if (beat % beatsPerMeasure === 0) {
-            kick.triggerAttackRelease('e1', '32n', time)
+            kick.triggerAttackRelease('e1', '16n', time)
         } else {
-            snare.triggerAttackRelease('32n', time)
+            snare.triggerAttackRelease('16n', time)
         }
         beat = (beat + 1) % beatsPerMeasure
     }
@@ -89,7 +89,7 @@
     }
 
     h2 {
-        color: #4997ca;
+        color: var(--theme-text);
         font-size: 40px;
         margin: 0;
     }
@@ -105,7 +105,7 @@
     }
 
     .play {
-        border: 1px solid #233947;
+        border: 1px solid var(--theme-border);
         height: 50px;
         width: 200px;
         background: transparent;
@@ -128,7 +128,7 @@
         color: #45525a;
     }
     .beatsPerMeasure {
-        color: #4997ca;
+        color: var(--theme-text);
         padding: 0 1.5rem;
         font-size: 20px;
         cursor: pointer;

@@ -23,10 +23,10 @@
         width: 30px;
         font-size: 15px;
         background: transparent;
-        color: #7ac1f0;
+        color: var(--theme-text-accent);
         cursor: pointer;
         font-weight: bolder;
-        border: 1px solid #233947;
+        border: 1px solid var(--theme-border);
     }
 </style>
 

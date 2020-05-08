@@ -64,20 +64,19 @@
         width: 8em;
         height: 8em;
         border-radius: 50%;
-        border: solid 0.25em #0e0e0e;
+        border: solid 0.25em var(--theme-knob-border);
         margin: 3em auto;
-        background: #181818;
-        background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #1d1d1d), color-stop(1, #131313));
-        background: -ms-linear-gradient(bottom, #1d1d1d, #131313);
-        background: -moz-linear-gradient(center bottom, #1d1d1d 0%, #131313 100%);
-        background: -o-linear-gradient(#131313, #1d1d1d);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#131313', endColorstr='#1d1d1d', GradientType=0);
-        -webkit-box-shadow: 0 0.2em 0.1em 0.05em rgba(255, 255, 255, 0.1) inset,
-            0 -0.2em 0.1em 0.05em rgba(0, 0, 0, 0.5) inset, 0 0.5em 0.65em 0 rgba(0, 0, 0, 0.3);
-        -moz-box-shadow: 0 0.2em 0.1em 0.05em rgba(255, 255, 255, 0.1) inset,
-            0 -0.2em 0.1em 0.05em rgba(0, 0, 0, 0.5) inset, 0 0.5em 0.65em 0 rgba(0, 0, 0, 0.3);
-        box-shadow: 0 0.2em 0.1em 0.05em rgba(255, 255, 255, 0.1) inset, 0 -0.2em 0.1em 0.05em rgba(0, 0, 0, 0.5) inset,
-            0 0.5em 0.65em 0 rgba(0, 0, 0, 0.3);
+
+        background: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0, var(--theme-knob-grad-1)),
+            color-stop(1, var(--theme-knob-grad-2))
+        );
+
+        box-shadow: 0 0.2em 0.1em 0.05em var(--theme-knob-shadow-1) inset,
+            0 -0.2em 0.1em 0.05em var(--theme-knob-shadow-2) inset, 0 0.5em 0.65em 0 var(--theme-knob-shadow-3);
     }
     .knob {
         position: absolute;
@@ -92,7 +91,7 @@
         left: 19%;
         width: 3%;
         height: 3%;
-        background-color: #7ac1f0;
+        background-color: var(--theme-text-accent);
         border-radius: 50%;
         -webkit-box-shadow: 0 0 0.4em 0 #79c3f4;
         -moz-box-shadow: 0 0 0.4em 0 #79c3f4;

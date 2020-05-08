@@ -6,14 +6,14 @@
 
 <style>
     div {
-        border: 1px solid #4997ca;
+        border: 1px solid var(--theme-text);
         width: 17px;
         height: 17px;
         border-radius: 100%;
         margin: 3px 5px;
     }
     .active {
-        background: #4997ca;
+        background: var(--theme-text);
     }
 </style>
 
