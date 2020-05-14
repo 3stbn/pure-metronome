@@ -3,6 +3,7 @@ export const themes = [
         name: 'light',
         colors: {
             text: '#57a8dd',
+            'text-black': '#889295',
             'text-accent': '#51aae5',
             border: '#bad8ea',
             background: '#f1f1f1',
@@ -11,13 +12,14 @@ export const themes = [
             'knob-shadow-1': 'rgba(255, 255, 255, 0.01)',
             'knob-shadow-2': 'rgba(0, 0, 0, 0.05)',
             'knob-shadow-3': 'rgba(0, 0, 0, 0.03)',
-            'knob-border': '#9797972e',
+            'knob-border': '#e1e1e1db',
         },
     },
     {
         name: 'dark',
         colors: {
             text: '#4997ca',
+            'text-black': '#45525a',
             'text-accent': '#7ac1f0',
             border: '#233947',
             background: 'rgb(32, 32, 32)',

@@ -5,7 +5,7 @@ const storageBeatsPerMeasure = Number(localStorage.getItem('beatsPerMeasure')) |
 const storageTheme = localStorage.getItem('theme') || 'dark'
 
 const app = new App({
-    target: document.body,
+    target: document.querySelector('#app'),
     props: {
         dark: storageTheme === 'dark' ? true : false,
         bpm: storageBpm,

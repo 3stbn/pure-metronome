@@ -21,9 +21,12 @@
     let maxBpm = 300
     let hasStartedAudio = false
 
-    $: localStorage.setItem('theme', dark ? 'dark' : 'light')
-    $: localStorage.setItem('bpm', bpm)
-    $: localStorage.setItem('beatsPerMeasure', beatsPerMeasure)
+    $: {
+        localStorage.setItem('theme', dark ? 'dark' : 'light')
+        localStorage.setItem('bpm', bpm)
+        localStorage.setItem('beatsPerMeasure', beatsPerMeasure)
+    }
+
     $: Tone.Transport.bpm.value = bpm
     $: dots = [...Array(beatsPerMeasure).keys()]
     $: theme = themes.find(h => {
@@ -81,7 +84,7 @@
         overflow: hidden;
     }
     .app {
-        background: rgb(32, 32, 32);
+        padding-top: 25px;
         font-family: 'Roboto', sans-serif;
         background: white;
         background: var(--theme-background);
@@ -125,7 +128,7 @@
     }
     h3,
     h4 {
-        color: #45525a;
+        color: var(--theme-text-black);
     }
     .beatsPerMeasure {
         color: var(--theme-text);
